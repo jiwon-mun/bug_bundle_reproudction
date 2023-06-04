@@ -2,13 +2,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
-    "next": "canary",
+    "@svgr/webpack": "^8.0.1",
+    "next": "13.2.5-canary.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.13",
